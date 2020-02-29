@@ -109,7 +109,13 @@ const IndexPage = () => {
           as="section"
           gridColumn={["auto / span 4", null, null, "1 / span 12"]}
         >
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            name="contact"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
             <TextInput htmlFor="first-name">
               <input
                 id="first-name"
@@ -133,6 +139,7 @@ const IndexPage = () => {
               <span className="TextInput__label">Email</span>
             </TextInput>
             <textarea name="Message" ref={register} />
+            <input type="hidden" name="form-name" value="contact" />
             <SubmitButton />
           </form>
         </Column>
