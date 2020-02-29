@@ -10,10 +10,6 @@ import { useForm } from "react-hook-form";
 import { TextInput } from "../components/shared/Form/styles";
 
 const IndexPage = () => {
-  const { register, handleSubmit, errors } = useForm();
-  const onSubmit = data => console.log(data);
-  console.log(errors);
-
   return (
     <Layout>
       <VideoPlayer />
@@ -110,37 +106,30 @@ const IndexPage = () => {
           gridColumn={["auto / span 4", null, null, "1 / span 12"]}
         >
           <form
-            onSubmit={handleSubmit(onSubmit)}
-            name="contact"
             method="post"
+            netlify-honeypot="bot-field"
             data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            name="testform"
           >
-            <TextInput htmlFor="first-name">
-              <input
-                id="first-name"
-                className="TextInput__input"
-                type="text"
-                placeholder="First name"
-                name="First name"
-                ref={register({ required: true, maxLength: 80 })}
-              />
-              <span className="TextInput__label">Name</span>
-            </TextInput>
-            <TextInput htmlFor="email">
-              <input
-                placeholder="test"
-                className="TextInput__input"
-                type="email"
-                name="Email"
-                id="email"
-                ref={register({ required: true, pattern: /^\S+@\S+$/i })}
-              />
-              <span className="TextInput__label">Email</span>
-            </TextInput>
-            <textarea name="Message" ref={register} />
-            <input type="hidden" name="form-name" value="contact" />
-            <SubmitButton />
+            <input type="hidden" name="bot-field" />
+            <label>
+              Name
+              <input type="text" name="name" id="name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" id="email" />
+            </label>
+            <label>
+              Subject
+              <input type="text" name="subject" id="subject" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" id="message" rows="5" />
+            </label>
+            <button type="submit">Send</button>
+            <input type="reset" value="Clear" />
           </form>
         </Column>
       </Grid>
