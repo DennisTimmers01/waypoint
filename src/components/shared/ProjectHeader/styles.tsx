@@ -7,9 +7,4 @@ export const ProjectHeader = styled.div`
   color: ${props => props.theme.colors.white};
   padding-left: 4vw;
   padding-right: 4vw;
-
-  .ProjectHeader__projectOwner {
-  }
-  .ProjectHeader__date {
-  }
 `;

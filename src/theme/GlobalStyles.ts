@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 62.5%;
+    overflow-x: hidden;
   }
 
   body {
@@ -22,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
     ${props => props.theme.fonts.OpenSans.light};
     background-color: ${props => props.theme.colors.darkBlue};
     height: 300vh;
-    overflow-x: hidden;
+    
   }
 
   h1,h2,h3,h4,h5,h6 {
