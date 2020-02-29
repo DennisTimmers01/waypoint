@@ -105,7 +105,7 @@ const IndexPage = () => {
           as="section"
           gridColumn={["auto / span 4", null, null, "1 / span 12"]}
         >
-          <form
+          {/* <form
             method="post"
             netlify-honeypot="bot-field"
             data-netlify="true"
@@ -130,7 +130,7 @@ const IndexPage = () => {
             </label>
             <button type="submit">Send</button>
             <input type="reset" value="Clear" />
-          </form>
+          </form> */}
         </Column>
       </Grid>
     </Layout>

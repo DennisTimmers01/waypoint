@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const StyledSlider = styled.div<{ mouseIsDown?: boolean }>`
+  width: 100%;
   transition: transform 250ms ease-in-out;
   ${props =>
     props.mouseIsDown &&
