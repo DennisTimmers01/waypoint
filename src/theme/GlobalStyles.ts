@@ -3,28 +3,14 @@ import styledNormalize from "styled-normalize";
 
 export const GlobalStyle = createGlobalStyle`
  ${styledNormalize};
+  
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
  *,
  *::before,
- &::after {
+ *::after {
    box-sizing: border-box;
  }
-
-  @font-face {
-    font-family: 'gilroy';
-    src: url("fonts/gilroy-extrabold-webfont.woff2") format('woff2'),
-         url("fonts/gilroy-extrabold-webfont.woff") format('woff');
-    font-weight: 900;
-    line-height: 1.3;
-  }
-  
-  @font-face {
-    font-family: 'gilroy';
-    src: url("fonts/gilroy-light-webfont.woff2") format('woff2'),
-         url("fonts/gilroy-light-webfont.woff") format('woff');
-    font-weight: 200;
-    line-height: 1.5;
-  }
 
   html {
     font-size: 62.5%;
@@ -33,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-size: 1.6rem;
     line-height: 1.5;
-    ${props => props.theme.fonts.gilroy.light};
+    ${props => props.theme.fonts.OpenSans.light};
     background-color: ${props => props.theme.colors.darkBlue};
     height: 300vh;
     overflow-x: hidden;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { grid, GridProps } from "styled-system";
 
 export const H1 = styled.h1`
-  ${props => props.theme.fonts.gilroy.light};
+  ${props => props.theme.fonts.OpenSans.light};
   font-size: 3.2rem;
   line-height: 1.1;
 
@@ -12,7 +12,7 @@ export const H1 = styled.h1`
 `;
 
 export const H2 = styled.h2`
-  ${props => props.theme.fonts.gilroy.extraBold};
+  ${props => props.theme.fonts.OpenSans.extraBold};
   font-size: 2rem;
   line-height: 1.2;
   color: ${props => props.theme.colors.white};
@@ -23,7 +23,7 @@ export const H2 = styled.h2`
 `;
 
 export const Text = styled.p<GridProps>`
-  ${props => props.theme.fonts.gilroy.light};
+  ${props => props.theme.fonts.OpenSans.light};
   font-size: 1.4rem;
   line-height: 1.5;
   color: ${props => props.theme.colors.white};
@@ -31,7 +31,7 @@ export const Text = styled.p<GridProps>`
 `;
 
 export const TextSmall = styled.p`
-  ${props => props.theme.fonts.gilroy.light};
+  ${props => props.theme.fonts.OpenSans.light};
   font-size: 1.2rem;
   line-height: 1.5;
 `;

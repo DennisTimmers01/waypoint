@@ -10,14 +10,14 @@ export const theme = {
   },
 
   fonts: {
-    gilroy: {
+    OpenSans: {
       light: css`
-        font-family: "gilroy", sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-weight: 200;
       `,
 
       extraBold: css`
-        font-family: "gilroy", sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-weight: 800;
       `,
     },
