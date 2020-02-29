@@ -78,7 +78,7 @@ export const VideoHeader = styled.header<Props>`
     height: 100%;
     background-color: black;
     transition: opacity 500ms ease-in-out;
-    opacity: 0.5;
+    opacity: 0.8;
   }
 
   .VideoHeader__playButton:hover ~ .VideoHeader__overlay {
